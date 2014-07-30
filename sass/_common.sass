@@ -3,14 +3,36 @@
 
 // Fonts
 // --------------------------------------------------
++font(PFDinTextCondPro-Regular, PFDinTextCondPro-Regular)
+=cond-regular
+	font-family: "PFDinTextCondPro-Regular", arial, sans-serif
+	
++font(PFDinTextCondPro-Medium, PFDinTextCondPro-Medium)
+=cond-medium 
+	font-family: "PFDinTextCondPro-Medium", arial, sans-serif
+
++font(PFDinTextCondPro-Bold, PFDinTextCondPro-Bold)
+=cond-bold
+	font-family: "PFDinTextCondPro-Bold", arial, sans-serif
 
 // Variables & mixins & extend
 // --------------------------------------------------
-// $color-red: red
-// $color-blue: blue
 
-// etc
+.wrap
+	margin-left: auto
+	margin-right: auto
+	width: 940px
+	padding-left: 10px
+	padding-right: 10px
+%wrap
+	margin-left: auto
+	margin-right: auto
+	width: 940px
+	padding-left: 10px
+	padding-right: 10px
 
+.align-center
+	text-align: center
 // Common blocks
 // --------------------------------------------------
 body
@@ -26,6 +48,259 @@ body
 
 // Header
 // --------------------------------------------------
+.header
+	padding: 15px 0
+	position: relative
+	z-index: 100
+	background: #fff
+	&:after
+		content: ""
+		height: 4px
+		background: #000 
+		position: absolute
+		left: 0
+		right: 0
+		bottom: -2px
+		+rotate(-1.55)
+	.header__in
+		position: relative
+	.logo
+		+s(logo)
+		position: absolute
+		top: 11px
+		left: 28px
+	.header__meta
+		margin-left: 236px
+		font-size: 38px
+		color: #000
+		text-transform: uppercase
+		+cond-regular
+	.header__numone
+		margin-left: 236px
+		font-size: 38px
+		color: #000
+		text-transform: uppercase
+		line-height: 1
+		letter-spacing: -0.01em
+		+cond-bold
+	.header__tel
+		padding: 30px 20px
+		position: absolute
+		top: -15px
+		right: -34px
+		z-index: 100
+		&:after
+			content: ""
+			width: 315px
+			height: 135px
+			position: absolute
+			top: -10px
+			right: 23px
+			+gh(#64bc46,#82d05b)
+			+rotate(-2)
+	.header__telnum
+		margin-right: 20px
+		position: relative
+		z-index: 200
+		font-size: 34px
+		line-height: 1
+		color: #FF0 
+		+cond-medium
+		&:before	
+			content: ""
+			position: absolute
+			left: -21px
+			top: 5px
+			+s(i-tel)
+		a
+			font-size: 34px
+			color: #FF0 
+			text-decoration: none
+			+cond-medium
+	.header__telcall
+		margin-right: 20px
+		position: relative
+		z-index: 200
+		font-size: 18px
+		line-height: 1
+		color: #FFF
+		+cond-regular
+		text-align: right
+		a
+			text-decoration: underline
+			font-size: 18px
+			color: #FFF
+			+cond-regular
+			&:hover
+				text-decoration: none
 
+.drumm
+	margin-bottom: 452px
+	position: relative
+	&:after
+		content: ""
+		width: 1193px
+		height: 795px
+		background: url("../img/drumm.jpg")
+		position: absolute
+		top: -32px
+		left: 50%
+		margin-left: -604px
+	.drumm__in
+		padding-top: 45px
+	.drumm__title
+		position: relative
+		z-index: 1000
+		font-size: 38px
+		color: #64BC46
+		text-align: center
+		text-transform: uppercase
+		line-height: 1
+		+cond-bold
+	.drumm__meta
+		position: relative
+		z-index: 1000
+		font-size: 24px
+		text-align: center
+		text-transform: uppercase
+		color: #000
+		+cond-regular
+
+.order
+	height: 321px
+	background: url("../img/bg1.png")
+	+cover
+	position: relative
+	z-index: 100
+	.order__in 
+	.order__title
+		margin-bottom: 8px
+		padding-top: 68px
+		font-size: 32px
+		color: #FFF
+		text-transform: uppercase
+		+cond-regular
+		strong
+			font-size: 42px
+			color: #ff0
+			+cond-bold
+	.order__row
+		margin-bottom: 20px
+		font-size: 0
+	.order__input
+		display: inline-block
+		min-width: 428px
+		padding: 12px 14px
+		border: 2px solid #35851c
+		font-size: 18px
+		line-height: 21px
+		color: rgba(#000, .4)
+		+cond-regular
+		&:focus
+			@include box-shadow(0 0 10px rgba(54,133,29,.75))
+		&:first-child
+			margin-right: 20px
+	.order__send
+		display: inline-block
+		padding: 11px 59px
+		border: 2px solid #35851c
+		background-color: #fff
+		@include box-shadow(3px 4px 9px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.5), inset 0 0 0 1px rgba(255,255,255,.5))
+		@include background-image(linear-gradient(bottom, #ffcc16 30%, #ffe60a 70%))
+		@include text-shadow(0 1px 0 rgba(255,255,255,.7))
+		font-size: 24px
+		color: #957500
+		text-transform: uppercase
+		text-decoration: none
+		+cond-bold
+		&:hover
+			border: 2px solid #35851c
+			@include background-image(linear-gradient(bottom, #ffd642 30%, #fff284 70%))
+		&:active
+			border: 2px solid #35851c
+			@include box-shadow(3px 4px 9px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.5), inset 0 0 0 1px rgba(255,255,255,.5))
+			@include background-image(linear-gradient(bottom, #ffe60a 30%, #ffcc16 70%))
+
+.proj
+	position: relative
+	&:after
+		content: ""
+		width: 100%
+		height: 1074px
+		background: url("../img/bg1.jpg")
+		+cover
+		position: absolute
+		top: -115px
+		left: 0
+	&:before
+		content: ""
+		width: 376px
+		height: 690px
+		background: url("../img/tipok.png")
+		position: absolute
+		top: 0
+		right: 0 
+	.proj__in
+		position: relative
+		z-index: 1000
+	.proj__top
+		margin-bottom: 30px
+		font-size: 30px
+		color: #FFF
+		position: relative
+		text-align: center
+		text-transform: uppercase
+		+cond-regular
+		&:before
+			content: ""
+			width: 260px
+			height: 2px
+			background: #64bc46
+			position: absolute
+			bottom: -5px
+			left: 50%
+			margin-left: -130px
+	.proj__cont
+		color: #FFF
+		font-size: 20px
+		line-height: 1.2
+		+cond-regular
+	.proj__title
+		font-size: 64px
+		text-transform: uppercase
+	.proj__media
+		margin-bottom: 70px
+		margin-top: 20px
+		width: 612px
+		height: 370px
+		border: 4px solid #fff
+	.proj__caro 
+		.proj__caro-items
+			+clr
+		.proj__caro-item
+			margin-left: 35px
+			width: 160px
+			height: 110px
+			float: left
+			&:first-child
+				margin-left: 0
+		.proj__caro-title
+			color: #FFF
+			font-size: 24px
+			text-transform: uppercase
+			+cond-regular
+		.proj__caro-media
+			width: 152px
+			height: 102px
+			overflow: hidden
+			display: inline-block
+			border: 4px solid #fff
+			img
+				display: block
+
+
+	
+	
+	
 // Footer
 // --------------------------------------------------
