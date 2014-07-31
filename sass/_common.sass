@@ -372,6 +372,7 @@ body
 
 .popular
 	position: relative
+	z-index: 200
 	&:after
 		content: ""
 		width: 100%
@@ -411,6 +412,16 @@ body
 		li
 			float: left
 			margin-right: 20px
+		.popular__list-prev, .popular__list-next
+			position: absolute
+			top: 58px
+			cursor: pointer
+		.popular__list-prev
+			left: -30px
+			+s(i-left)
+		.popular__list-next
+			right: -30px
+			+s(i-right)
 	.popular__media
 		width: 212px
 		height: 152px
@@ -418,11 +429,118 @@ body
 		img
 			display: block
 
+.scroller
+	height: 190px !important
 .scroller__bar
 	cursor: pointer
 	&:hover
 		background-color: #63bb45
 		@include box-shadow(0 0 15px rgba(100,188,70,.45))
-	
+
+.container
+	position: relative
+	top: -11px
+.progress
+	position: relative
+	&:before
+		content: ""
+		width: 100%
+		height: 608px
+		background: url("../img/bg2.jpg")
+		+cover
+		position: absolute
+		top: -89px
+		left: 0
+	.progress__in
+		min-height: 496px
+		position: relative
+		z-index: 100
+	.progress__top
+		margin-bottom: 40px
+		font-size: 30px
+		text-transform: uppercase
+		text-align: center
+		+cond-regular
+		color: #000
+		position: relative
+		&:after
+			content: ""
+			width: 260px
+			height: 2px
+			background: #64BC46
+			position: absolute
+			bottom: 0px
+			left: 50%
+			margin-left: -130px
+	.progress__diplom
+		position: absolute
+		top: 82px
+		right: 22px
+		ul
+			+clr
+		li
+			margin-left: 50px
+			float: left
+			&:first-child
+				margin-left: 0
+	.progress__honors
+		width: 1000px
+		height: 62px
+		background: url("../img/stand.png")
+		position: absolute
+		bottom: 5px
+		right: -20px
+		.honors__1
+			width: 123px
+			height: 398px
+			background: url("../img/dip5.png")
+			position: absolute
+			right: 814px
+			bottom: 25px
+		.honors__2
+			width: 250px
+			height: 215px
+			background: url("../img/dip6.png")
+			position: absolute
+			right: 465px
+			bottom: 3px
+		.honors__3
+			width: 250px
+			height: 215px
+			background: url("../img/dip7.png")
+			position: absolute
+			right: 145px
+			bottom: 3px
+
+.choose
+	.choose__in
+	.choose__top
+		margin-bottom: 40px
+		font-size: 30px
+		text-transform: uppercase
+		text-align: center
+		+cond-regular
+		color: #000
+		position: relative
+		&:after
+			content: ""
+			width: 260px
+			height: 2px
+			background: #64BC46
+			position: absolute
+			bottom: 0px
+			left: 50%
+			margin-left: -130px
+	.choose__row
+		+clr
+	.choose___col
+		width: 460px
+		float: left
+	.choose__list
+		.choose__list-meta
+		ul
+		li
+			strong
+
 // Footer
 // --------------------------------------------------

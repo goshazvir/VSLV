@@ -2,7 +2,7 @@
 .wrapper {
     height: 280px;
     position: relative;
-    overflow: hidden;
+
 }
 .scroller {
     overflow-y: scroll;

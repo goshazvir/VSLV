@@ -33,13 +33,13 @@ body { font-size: 14px; font-family: Arial, sans-serif; line-height: 1.4; }
 .header { padding: 15px 0; position: relative; z-index: 100; background: white; }
 .header:after { content: ""; height: 4px; background: black; position: absolute; left: 0; right: 0; bottom: -2px; -ms-transform: rotate(-1.55deg); -webkit-transform: rotate(-1.55deg); transform: rotate(-1.55deg); }
 .header .header__in { position: relative; }
-.header .logo { background: url('../img/icons-sd26305a11a.png') 0 0 no-repeat; width: 161px; height: 77px; position: absolute; top: 11px; left: 28px; }
+.header .logo { background: url('../img/icons-s3a35556db7.png') 0 0 no-repeat; width: 161px; height: 77px; position: absolute; top: 11px; left: 28px; }
 .header .header__meta { margin-left: 236px; font-size: 38px; color: black; text-transform: uppercase; font-family: "PFDinTextCondPro-Regular", arial, sans-serif; }
 .header .header__numone { margin-left: 236px; font-size: 38px; color: black; text-transform: uppercase; line-height: 1; letter-spacing: -0.01em; font-family: "PFDinTextCondPro-Bold", arial, sans-serif; }
 .header .header__tel { padding: 30px 20px; position: absolute; top: -15px; right: -34px; z-index: 100; }
 .header .header__tel:after { content: ""; width: 315px; height: 135px; position: absolute; top: -10px; right: 23px; background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #64bc46), color-stop(100%, #82d05b)); background-image: -webkit-linear-gradient(left, #64bc46, #82d05b); background-image: -moz-linear-gradient(left, #64bc46, #82d05b); background-image: -o-linear-gradient(left, #64bc46, #82d05b); background-image: linear-gradient(left, #64bc46, #82d05b); -ms-transform: rotate(-2deg); -webkit-transform: rotate(-2deg); transform: rotate(-2deg); }
 .header .header__telnum { margin-right: 20px; position: relative; z-index: 200; font-size: 34px; line-height: 1; color: yellow; font-family: "PFDinTextCondPro-Medium", arial, sans-serif; }
-.header .header__telnum:before { content: ""; position: absolute; left: -21px; top: 5px; background: url('../img/icons-sd26305a11a.png') 0 -87px no-repeat; width: 16px; height: 28px; }
+.header .header__telnum:before { content: ""; position: absolute; left: -21px; top: 5px; background: url('../img/icons-s3a35556db7.png') 0 -359px no-repeat; width: 16px; height: 28px; }
 .header .header__telnum a { font-size: 34px; color: yellow; text-decoration: none; font-family: "PFDinTextCondPro-Medium", arial, sans-serif; }
 .header .header__telcall { margin-right: 20px; position: relative; z-index: 200; font-size: 18px; line-height: 1; color: white; font-family: "PFDinTextCondPro-Regular", arial, sans-serif; text-align: right; }
 .header .header__telcall a { text-decoration: underline; font-size: 18px; color: white; font-family: "PFDinTextCondPro-Regular", arial, sans-serif; }
@@ -93,7 +93,7 @@ body { font-size: 14px; font-family: Arial, sans-serif; line-height: 1.4; }
 .touring .touring__list .touring__media-in { width: 130px; height: 126px; border-radius: 50%; overflow: hidden; }
 .touring .touring__list .touring__title { color: black; font-size: 18px; text-transform: uppercase; text-align: center; font-family: "PFDinTextCondPro-Regular", arial, sans-serif; }
 
-.popular { position: relative; }
+.popular { position: relative; z-index: 200; }
 .popular:after { content: ""; width: 100%; height: 482px; background: url("../img/popular.png"); position: absolute; top: -155px; left: 0; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 .popular .popular__in { position: relative; z-index: 100; }
 .popular .popular__top { margin-bottom: 25px; color: white; font-size: 30px; text-transform: uppercase; text-align: center; font-family: "PFDinTextCondPro-Regular", arial, sans-serif; position: relative; }
@@ -101,11 +101,39 @@ body { font-size: 14px; font-family: Arial, sans-serif; line-height: 1.4; }
 .popular .popular__cont { position: relative; }
 .popular .popular__cont .scroller__bar-wrapper { top: 180px; left: 0; right: 0; }
 .popular .popular__list li { float: left; margin-right: 20px; }
+.popular .popular__list .popular__list-prev, .popular .popular__list .popular__list-next { position: absolute; top: 58px; cursor: pointer; }
+.popular .popular__list .popular__list-prev { left: -30px; background: url('../img/icons-s3a35556db7.png') 0 -273px no-repeat; width: 20px; height: 33px; }
+.popular .popular__list .popular__list-next { right: -30px; background: url('../img/icons-s3a35556db7.png') 0 -316px no-repeat; width: 20px; height: 33px; }
 .popular .popular__media { width: 212px; height: 152px; border: 4px solid white; }
 .popular .popular__media img { display: block; }
 
+.scroller { height: 190px !important; }
+
 .scroller__bar { cursor: pointer; }
 .scroller__bar:hover { background-color: #63bb45; -webkit-box-shadow: 0 0 15px rgba(100, 188, 70, 0.45); -moz-box-shadow: 0 0 15px rgba(100, 188, 70, 0.45); box-shadow: 0 0 15px rgba(100, 188, 70, 0.45); }
+
+.container { position: relative; top: -11px; }
+
+.progress { position: relative; }
+.progress:before { content: ""; width: 100%; height: 608px; background: url("../img/bg2.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; position: absolute; top: -89px; left: 0; }
+.progress .progress__in { min-height: 496px; position: relative; z-index: 100; }
+.progress .progress__top { margin-bottom: 40px; font-size: 30px; text-transform: uppercase; text-align: center; font-family: "PFDinTextCondPro-Regular", arial, sans-serif; color: black; position: relative; }
+.progress .progress__top:after { content: ""; width: 260px; height: 2px; background: #64bc46; position: absolute; bottom: 0px; left: 50%; margin-left: -130px; }
+.progress .progress__diplom { position: absolute; top: 82px; right: 22px; }
+.progress .progress__diplom ul { *zoom: 1; }
+.progress .progress__diplom ul:after { content: " "; display: table; clear: both; }
+.progress .progress__diplom li { margin-left: 50px; float: left; }
+.progress .progress__diplom li:first-child { margin-left: 0; }
+.progress .progress__honors { width: 1000px; height: 62px; background: url("../img/stand.png"); position: absolute; bottom: 5px; right: -20px; }
+.progress .progress__honors .honors__1 { width: 123px; height: 398px; background: url("../img/dip5.png"); position: absolute; right: 814px; bottom: 25px; }
+.progress .progress__honors .honors__2 { width: 250px; height: 215px; background: url("../img/dip6.png"); position: absolute; right: 465px; bottom: 3px; }
+.progress .progress__honors .honors__3 { width: 250px; height: 215px; background: url("../img/dip7.png"); position: absolute; right: 145px; bottom: 3px; }
+
+.choose .choose__top { margin-bottom: 40px; font-size: 30px; text-transform: uppercase; text-align: center; font-family: "PFDinTextCondPro-Regular", arial, sans-serif; color: black; position: relative; }
+.choose .choose__top:after { content: ""; width: 260px; height: 2px; background: #64bc46; position: absolute; bottom: 0px; left: 50%; margin-left: -130px; }
+.choose .choose__row { *zoom: 1; }
+.choose .choose__row:after { content: " "; display: table; clear: both; }
+.choose .choose___col { width: 460px; float: left; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
