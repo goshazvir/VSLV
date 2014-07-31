@@ -171,7 +171,7 @@ body
 	background: url("../img/bg1.png")
 	+cover
 	position: relative
-	z-index: 100
+	z-index: 500
 	.order__in 
 	.order__title
 		margin-bottom: 8px
@@ -515,7 +515,7 @@ body
 .choose
 	.choose__in
 	.choose__top
-		margin-bottom: 40px
+		margin-bottom: 50px
 		font-size: 30px
 		text-transform: uppercase
 		text-align: center
@@ -537,10 +537,39 @@ body
 		width: 460px
 		float: left
 	.choose__list
+		padding-left: 60px
 		.choose__list-meta
-		ul
-		li
+			margin-bottom: 40px
+			position: relative
+			font-size: 24px
+			text-transform: uppercase
+			+cond-regular
+			color: #000 
+			&:before
+				content: ""
+				+s(drumm)
+				position: absolute
+				left: -56px
+				top: -15px
 			strong
+				+cond-bold
+				color: #64BC46 
+		li
+			margin-bottom: 10px
+			padding-right: 55px
+			position: relative
+			font-size: 18px
+			color: #000
+			+cond-regular
+			&:before
+				content: ""
+				position: absolute
+				left: -15px
+				top: 5px
+				margin-right: 3px
+				+s(i-star)
+			strong
+				+cond-bold
 
 // Footer
 // --------------------------------------------------
