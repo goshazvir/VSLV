@@ -1,3 +1,22 @@
 head.ready(function() {
-	console.log("These aren't the droids you're looking for!");
+	window.dima = baron({
+
+	}).fix({
+
+	}).pull({
+
+	});
+
+	baron({
+	    scroller: '.wrapper .scroller',
+	    bar: '.scroller__bar',
+	    barOnCls: 'baron'
+	}).fix({
+
+	}).baron({
+	    barOnCls: 'baron_h',
+	    bar: '.scroller__bar_h'
+	});
+
+	$('.fancybox').fancybox();
 });
