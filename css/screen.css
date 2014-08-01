@@ -234,8 +234,12 @@ body { font-size: 14px; font-family: Arial, sans-serif; line-height: 1.4; }
 .form .form__row { margin-bottom: 17px; }
 .form .form__row.form__row_center { text-align: center; }
 
-.map { height: 410px; margin-top: -20px; overflow: hidden; position: relative; }
+.map { height: 410px; margin-top: -68px; overflow: hidden; position: relative; }
 .map .map__top { width: 100%; height: 97px; background: url("../img/map_bg_top.png"); position: absolute; top: 0px; z-index: 100; overflow: hidden; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+
+.footer { margin-top: -30px; position: relative; }
+.footer .footer__top { height: 55px; position: absolute; top: -6px; left: 0px; right: 0; background: white; -ms-transform: rotate(-1.4deg); -webkit-transform: rotate(-1.4deg); transform: rotate(-1.4deg); }
+.footer .footer__in { padding-top: 100px; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
