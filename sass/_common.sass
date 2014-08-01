@@ -815,5 +815,48 @@ body
 		width: 196px
 		height: 47px
 		background: url("../img/logo11.jpg") 
+
+.performances
+	margin-top: -8px
+	.performances__in
+	.performances__top
+		margin-bottom: 50px
+		font-size: 30px
+		text-transform: uppercase
+		text-align: center
+		+cond-regular
+		color: #000
+		position: relative
+		&:after
+			content: ""
+			width: 260px
+			height: 2px
+			background: #64BC46
+			position: absolute
+			bottom: 0px
+			left: 50%
+			margin-left: -130px
+	.performances__row
+		margin-bottom: 30px
+		+clr
+	.performances__label
+		width: 188px
+		float: left
+		text-align: center
+	.performances__media
+		height: 125px
+		line-height: 125px
+		vertical-align: middle
+		img
+			display: inline-block
+			vertical-align: middle
+	.performances__item
+	.performances__title
+		font-size: 18px
+		line-height: 1.2
+		color: #000
+		+cond-regular
+
+
 // Footer
 // --------------------------------------------------
