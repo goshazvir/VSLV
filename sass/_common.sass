@@ -33,6 +33,56 @@
 
 .align-center
 	text-align: center
+
+.input
+	display: inline-block
+	min-width: 426px
+	padding: 12px 14px
+	border: 2px solid #35851c
+	font-size: 18px
+	line-height: 21px
+	color: rgba(#000, .4)
+	+cond-regular
+	&:focus
+		@include box-shadow(0 0 10px rgba(54,133,29,.75))
+	&:first-child
+		margin-right: 20px
+
+.textarea
+	display: inline-block
+	min-height: 92px
+	resize: vertical
+	padding: 12px 14px
+	border: 2px solid #35851c
+	font-size: 18px
+	line-height: 21px
+	color: rgba(#000, .4)
+	+cond-regular
+	&.textarea_form
+		width: 908px
+	&:focus
+		@include box-shadow(0 0 10px rgba(54,133,29,.75))
+
+.send
+	display: inline-block
+	padding: 11px 59px
+	border: 2px solid #35851c
+	background-color: #fff
+	@include box-shadow(3px 4px 9px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.5), inset 0 0 0 1px rgba(255,255,255,.5))
+	@include background-image(linear-gradient(bottom, #ffcc16 30%, #ffe60a 70%))
+	@include text-shadow(0 1px 0 rgba(255,255,255,.7))
+	font-size: 24px
+	color: #957500
+	text-transform: uppercase
+	text-decoration: none
+	+cond-bold
+	&:hover
+		border: 2px solid #35851c
+		@include background-image(linear-gradient(bottom, #ffd642 30%, #fff284 70%))
+	&:active
+		border: 2px solid #35851c
+		@include box-shadow(3px 4px 9px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.5), inset 0 0 0 1px rgba(255,255,255,.5))
+		@include background-image(linear-gradient(bottom, #ffe60a 30%, #ffcc16 70%))
 // Common blocks
 // --------------------------------------------------
 body
@@ -892,6 +942,7 @@ body
 			left: 50%
 			margin-left: -130px
 	.form__addr
+		margin-bottom: 25px
 		+clr
 	.form__addr-map
 		width: 470px
@@ -921,10 +972,32 @@ body
 			display: inline-block
 			vertical-align: middle
 			+s(i-tel2)
+	.form__title
+		margin-bottom: 10px
+		font-size: 32px
+		text-transform: uppercase
+		+cond-regular
 	.form__row
+		margin-bottom: 17px
+		&.form__row_center
+			text-align: center
 
-.input
+.map
+	height: 410px
+	margin-top: -20px
+	overflow: hidden
+	position: relative
+	.map__top
+		width: 100%
+		height: 97px
+		background: url("../img/map_bg_top.png")
+		position: absolute
+		top: 0px
+		z-index: 100
+		overflow: hidden
+		+cover
+	.map__in
+		img
 
-.textarea
 // Footer
 // --------------------------------------------------
