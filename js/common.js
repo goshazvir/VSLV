@@ -18,5 +18,19 @@ head.ready(function() {
 	    bar: '.scroller__bar_h'
 	});
 
-	$('.fancybox').fancybox();
+	// $('.fancybox').fancybox();
+
+	$('.fancybox').fancybox({
+	  // padding: 0,
+	  helpers: {
+	    overlay: {
+	      locked: false
+	    }
+	  }
+	});
+
+	$('.js-more').on('click', function() {
+	 $(".trust__row").removeClass("is-hide");
+	 return false;
+	});
 });

@@ -172,6 +172,14 @@ body
 	+cover
 	position: relative
 	z-index: 500
+	&.order_mod
+		height: 330px
+		position: relative
+		top: -23px
+		padding-top: 23px
+		background: url("../img/bg2.png")
+		background-repeat: no-repeat
+		background-size: cover
 	.order__in 
 	.order__title
 		margin-bottom: 8px
@@ -544,7 +552,10 @@ body
 			font-size: 24px
 			text-transform: uppercase
 			+cond-regular
-			color: #000 
+			color: #000
+			&._mod
+				&:before
+					+s(drumm2)
 			&:before
 				content: ""
 				+s(drumm)
@@ -571,5 +582,238 @@ body
 			strong
 				+cond-bold
 
+.works
+	width: 100%
+	min-height: 726px
+	background: url("../img/bg5.jpg")
+	+cover
+	.works__in
+		padding-top: 75px
+		position: relative
+	.works__right
+		position: absolute
+		top: 12px
+		right: -63px
+	.works__drummer
+		width: 377px
+		height: 339px
+		background: url("../img/tipok2.png") 
+	.works__meta
+		text-align: center
+		.h2
+			color: #FF0
+			font-size: 36px 
+			+cond-medium
+		.h3
+			color: #FFF
+			font-size: 36px 
+			+cond-regular
+	.works__top
+		margin-bottom: 66px
+		font-size: 30px
+		text-transform: uppercase
+		text-align: center
+		+cond-regular
+		color: #fff
+		position: relative
+		&:after
+			content: ""
+			width: 260px
+			height: 2px
+			background: #64BC46
+			position: absolute
+			bottom: 0px
+			left: 50%
+			margin-left: -130px
+	.works__list
+		margin-left: 9px
+		color: #FFF
+		font-size: 24px
+		+cond-regular
+		ul
+			+clr
+		li
+			width: 213px
+			float: left
+			text-align: center
+			position: relative
+			&:after
+				content: ""
+				position: absolute
+				top: 43px
+				right: 0
+				+s(arr)
+			&.li-mod
+				&:after
+					right: -20px
+			.sexy-arr
+				+s(sexy-arr)
+				position: absolute
+				bottom: -120px
+				left: 116px
+		.works__list-num
+			display: inline-block
+			margin-bottom: 15px
+			width: 100px
+			height: 100px
+			line-height: 100px
+			border-radius: 50%
+			background: #64bc46
+			font-size: 70px
+			+cond-bold
+		p
+			line-height: 1.2
+		strong
+			+cond-bold
+
+.order-mod
+	margin-top: 20px
+	.order__title
+		margin-bottom: 8px
+		padding-top: 68px
+		font-size: 32px
+		color: #FFF
+		text-transform: uppercase
+		+cond-regular
+		strong
+			font-size: 42px
+			color: #ff0
+			+cond-bold
+	.order__row
+		margin-bottom: 20px
+		font-size: 0
+	.order__input
+		display: inline-block
+		min-width: 428px
+		padding: 12px 14px
+		border: 2px solid #35851c
+		font-size: 18px
+		line-height: 21px
+		color: rgba(#000, .4)
+		+cond-regular
+		&:focus
+			@include box-shadow(0 0 10px rgba(54,133,29,.75))
+		&:first-child
+			margin-right: 20px
+	.order__send
+		display: inline-block
+		padding: 11px 59px
+		border: 2px solid #35851c
+		background-color: #fff
+		@include box-shadow(3px 4px 9px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.5), inset 0 0 0 1px rgba(255,255,255,.5))
+		@include background-image(linear-gradient(bottom, #ffcc16 30%, #ffe60a 70%))
+		@include text-shadow(0 1px 0 rgba(255,255,255,.7))
+		font-size: 24px
+		color: #957500
+		text-transform: uppercase
+		text-decoration: none
+		+cond-bold
+		&:hover
+			border: 2px solid #35851c
+			@include background-image(linear-gradient(bottom, #ffd642 30%, #fff284 70%))
+		&:active
+			border: 2px solid #35851c
+			@include box-shadow(3px 4px 9px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.5), inset 0 0 0 1px rgba(255,255,255,.5))
+			@include background-image(linear-gradient(bottom, #ffe60a 30%, #ffcc16 70%))
+
+.trust
+	.trust__in
+		position: relative
+		top: -18px
+		&:after
+			content: ""
+			width: 450px
+			height: 681px
+			background: url("../img/tipok3.png")
+			position: absolute
+			top: -140px
+			right: -125px
+	.trust__top
+		margin-bottom: 50px
+		font-size: 30px
+		text-transform: uppercase
+		text-align: center
+		+cond-regular
+		color: #000
+		position: relative
+		&:after
+			content: ""
+			width: 260px
+			height: 2px
+			background: #64BC46
+			position: absolute
+			bottom: 0px
+			left: 50%
+			margin-left: -130px
+	.trust__row
+		width: 680px
+		margin-bottom: 5px
+		+transition(all linear 0.3s)
+		&.trust__row_long
+			.ico
+				margin-right: 31px
+		&.is-hide
+			display: none
+			+transition(all linear 0.3s)
+	.trust__more
+		float: right
+		margin-top: 31px
+		margin-right: 50px
+		font-size: 24px
+		line-height: 1
+		color: #0072BC
+		text-decoration: none
+		border-bottom: 1px dotted #0072BC
+		+cond-regular
+		&:hover
+			border-color: transparent 
+	.ico
+		margin-right: 5px
+		display: inline-block
+		vertical-align: middle
+	.logo1
+		width: 157px
+		height: 71px
+		background: url("../img/logo1.jpg") 
+	.logo2
+		width: 113px
+		height: 55px
+		background: url("../img/logo2.jpg") 
+	.logo3
+		width: 163px
+		height: 91px
+		background: url("../img/logo3.jpg") 
+	.logo4
+		width: 147px
+		height: 69px
+		background: url("../img/logo4.jpg") 
+	.logo5
+		width: 88px
+		height: 58px
+		background: url("../img/logo5.jpg") 
+	.logo6
+		width: 110px
+		height: 55px
+		background: url("../img/logo6.jpg") 
+	.logo7
+		width: 172px
+		height: 33px
+		background: url("../img/logo7.jpg") 
+	.logo8
+		width: 168px
+		height: 57px
+		background: url("../img/logo8.jpg") 
+	.logo9
+		width: 652px
+		height: 76px
+		background: url("../img/logo9.jpg") 
+	.logo10
+		width: 143px
+		height: 76px
+		background: url("../img/logo10.jpg") 
+	.logo11
+		width: 196px
+		height: 47px
+		background: url("../img/logo11.jpg") 
 // Footer
 // --------------------------------------------------
