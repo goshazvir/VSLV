@@ -11,6 +11,43 @@
 </head>
 <body>
 
+<div class="overlay"></div>
+<div class="popup popup_send">
+	<div class="popup__in wrap">
+		<div class="cross js-cross"></div>
+		<div class="popup__title"><p>Заказать обратный звонок</p></div>
+		<div class="popup__row">
+			<input type="text" class="input" placeholder="Ваше имя">
+			<input type="text" class="input" placeholder="Ваш телефон">
+		</div>
+		<div class="popup__row popup__row_center">
+			<a href="#" class="send">Написать</a>
+		</div>
+	</div>
+</div>
+<!-- /.popup -->
+
+<div class="popup popup_succes">
+	<div class="popup__in wrap">
+		<div class="cross js-cross"></div>
+		<div class="popup__title"><p><strong>Спасибо!</strong></p></div>
+		<div class="popup__title popup__title_small"><p>Ваша заявка отправлена! Мы свяжемся с Вами в ближайшее время!!</p></div>
+		<div class="popup__social">
+			<div class="popup__social-meta">Расскажите друзьям:</div>
+			<div class="popup__social-list">
+				<ul>
+					<li class="vk"><a href="#"></a></li>
+					<li class="fb"><a href="#"></a></li>
+					<li class="tw"><a href="#"></a></li>
+					<li class="od"><a href="#"></a></li>
+					<li class="you"><a href="#"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /.popup -->
+
 <div class="out">
 	<div class="header">
 		<div class="header__in wrap">
@@ -416,39 +453,46 @@
 		<div class="trust">
 			<div class="trust__in wrap">
 				<div class="trust__top">Нам доверяют</div>
+				<div class="trust__1">
+					<div class="trust__row">
+						<img src="img/logo1.jpg" alt="">
+						<img src="img/logo2.jpg" alt="">
+						<img src="img/logo3.jpg" alt="">
+						<img src="img/logo4.jpg" alt="">
+					</div>
+					<div class="trust__row trust__row_long">
+						<img src="img/logo5.jpg" alt="">
+						<img src="img/logo6.jpg" alt="">
+						<img src="img/logo7.jpg" alt="">
+						<img src="img/logo8.jpg" alt="">
+					</div>
+					<div class="trust__row">
+						<img src="img/logo9.jpg" alt="">
+					</div>
+				</div>
+				<div class="trust__2">
+					<div class="trust__row">
+						<img src="img/logo1.jpg" alt="">
+						<img src="img/logo2.jpg" alt="">
+						<img src="img/logo3.jpg" alt="">
+						<img src="img/logo4.jpg" alt="">
+					</div>
+					<div class="trust__row">
+						<img src="img/logo1.jpg" alt="">
+						<img src="img/logo2.jpg" alt="">
+						<img src="img/logo3.jpg" alt="">
+						<img src="img/logo4.jpg" alt="">
+					</div>
+					<div class="trust__row">
+						<img src="img/logo1.jpg" alt="">
+						<img src="img/logo2.jpg" alt="">
+						<img src="img/logo3.jpg" alt="">
+						<img src="img/logo4.jpg" alt="">
+					</div>
+				</div>
 				<div class="trust__row">
-					<i class="ico logo1"></i>
-					<i class="ico logo2"></i>
-					<i class="ico logo3"></i>
-					<i class="ico logo4"></i>
-				</div>
-				<div class="trust__row trust__row_long">
-					<i class="ico logo5"></i>
-					<i class="ico logo6"></i>
-					<i class="ico logo7"></i>
-					<i class="ico logo8"></i>
-				</div>
-				<div class="trust__row">
-					<i class="ico logo9"></i>
-				</div>
-				<div class="trust__row is-hide">
-					<i class="ico logo1"></i>
-					<i class="ico logo2"></i>
-					<i class="ico logo3"></i>
-					<i class="ico logo4"></i>
-				</div>
-				<div class="trust__row trust__row_long is-hide">
-					<i class="ico logo5"></i>
-					<i class="ico logo6"></i>
-					<i class="ico logo7"></i>
-					<i class="ico logo8"></i>
-				</div>
-				<div class="trust__row is-hide">
-					<i class="ico logo9"></i>
-				</div>
-				<div class="trust__row">
-					<i class="ico logo10"></i>
-					<i class="ico logo11"></i>
+					<img src="img/logo10.jpg" alt="">
+					<img src="img/logo11.jpg" alt="">
 					<a href="#" class="trust__more js-more">Показать еще</a>
 				</div>
 			</div>
@@ -463,7 +507,7 @@
 					<input type="text" class="order__input" placeholder="Ваш e-mail">
 				</div>
 				<div class="order__row align-center">
-					<a href="#" class="order__send">Заказать</a>
+					<a href="#" class="order__send js-succes">Заказать</a>
 				</div>
 			</div>
 		</div>
@@ -576,7 +620,7 @@
 					<textarea class="textarea textarea_form" placeholder="Ваше имя"></textarea>
 				</div>
 				<div class="form__row form__row_center">
-					<a href="#" class="send">Написать</a>
+					<a href="#" class="send js-send">Написать</a>
 				</div>
 			</div>
 		</div>
@@ -597,7 +641,30 @@
 			<div class="footer__top"></div>
 			<div class="footer__line"></div>
 			<div class="footer__in wrap">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem aperiam, quae in debitis tempora minus temporibus, quisquam numquam provident minima dolore iure velit modi voluptatem dolor aut iusto, libero saepe.
+				<div class="footer__row">
+					<a href="#" class="footer__logo"></a>
+					<div class="footer__copy">
+						<p>© 2006-2014 Vasiliev Groove – грандиозное, </p>
+						<p>мультимедийное барабанное шоу в России!</p>
+					</div>
+					<div class="footer__social">
+						<ul>
+							<li class="vk"><a href="#"></a></li>
+							<li class="fb"><a href="#"></a></li>
+							<li class="tw"><a href="#"></a></li>
+							<li class="od"><a href="#"></a></li>
+							<li class="you"><a href="#"></a></li>
+						</ul>
+					</div>
+					<div class="footer__tel">
+						<div class="footer__tel-num"><a href="#">+7 (967) 114-29-99</a></div>
+						<div class="footer__tel-send"><a href="#">Заказать обратный звонок</a></div>
+					</div>
+				</div>
+				<div class="footer__note">
+					<p>Свидетельство о регистрации товарного знака №506711 и №506712.</p>
+					<p>Зарегистрировано в Государственном реестре товарных знаков и знаков осблуживания Российской Федерации.</p>
+				</div>
 			</div>
 		</div>
 		<!-- /.footer -->

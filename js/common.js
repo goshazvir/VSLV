@@ -30,7 +30,24 @@ head.ready(function() {
 	});
 
 	$('.js-more').on('click', function() {
-	 $(".trust__row").removeClass("is-hide");
+	 $(".trust__1").hide();
+	 $(".trust__2").show();
 	 return false;
+	});
+
+	$('.js-send').on('click', function() {
+	 $(".overlay").addClass("is-active");
+	 $(".popup_send").addClass("is-active");
+	 // return false;
+	});
+
+	$('.js-cross').on('click', function() {
+		$(".popup").removeClass("is-active");
+		$(".overlay").removeClass("is-active");
+	});
+
+	$('.js-succes').on('click', function() {
+		$(".overlay").addClass("is-active");
+		$(".popup_succes").addClass("is-active");
 	});
 });

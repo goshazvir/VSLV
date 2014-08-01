@@ -802,11 +802,16 @@ body
 		margin-bottom: 5px
 		+transition(all linear 0.3s)
 		&.trust__row_long
-			.ico
+			img
 				margin-right: 31px
-		&.is-hide
-			display: none
-			+transition(all linear 0.3s)
+		// &.is-hide
+		// 	display: none
+		// 	+transition(all linear 0.3s)
+		// &.is-open
+		// 	display: block
+		// 	+transition(all linear 0.3s)
+	.trust__2
+		display: none
 	.trust__more
 		float: right
 		margin-top: 31px
@@ -819,7 +824,7 @@ body
 		+cond-regular
 		&:hover
 			border-color: transparent 
-	.ico
+	img
 		margin-right: 5px
 		display: inline-block
 		vertical-align: middle
@@ -1025,9 +1030,190 @@ body
 		position: absolute
 		top: -10px
 		left: 0px
-		right: 0
+		right: 5px
 		background: #000
 		+rotate(-1)
 		z-index: 100
 	.footer__in
 		padding-top: 100px
+	.footer__row
+	.footer__logo
+		margin-right: 15px
+		display: inline-block
+		vertical-align: middle
+		+s(logo_footer)
+	.footer__copy
+		margin-right: 30px
+		display: inline-block
+		vertical-align: middle
+		font-size: 12px
+		color: #000 
+	.footer__social
+		margin-right: 28px
+		display: inline-block
+		vertical-align: middle
+		ul
+			+clr
+		li
+			float: left
+			margin-left: 10px
+			&:first-child
+				margin-left: 0
+			&.vk
+				a
+					+s(vk)
+			&.fb
+				a
+					+s(fb)
+			&.tw
+				a
+					+s(tw)
+			&.od
+				a
+					+s(od)
+			&.you
+				a
+					+s(yt)
+		a
+			display: block
+	.footer__tel
+		display: inline-block
+		vertical-align: middle
+		text-align: right
+	.footer__tel-num
+		font-size: 34px
+		color: #000
+		+cond-medium
+		&:before
+			content: ""
+			+s(i-tel3)
+			display: inline-block
+			vertical-align: middle
+		a
+			font-size: 34px
+			color: #000
+			+cond-medium
+			text-decoration: none
+			&:hover
+				+opacity(0.8)
+	.footer__tel-send
+		text-align: right
+		font-size: 18px
+		color: #0072bc 
+		+cond-regular
+		a
+			font-size: 18px
+			color: #0072bc 
+			+cond-regular
+			&:hover
+				text-decoration: none
+	.footer__note
+		font-size: 10px
+		color: rgba(#000, .4)
+
+.overlay
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	background: rgba(#fff, .4)
+	+opacity(0)
+	+transition(all .4s linear)
+	&.is-active
+		z-index: 3000
+		+opacity(1)
+		+transition(all .4s linear)
+.popup
+	+transition(all .4s linear)
+	+opacity(0)
+	&.popup_send
+		width: 100%
+		height: 250px
+		padding-top: 71px
+		background: url("../img/popup1.png")
+		+cover
+		position: absolute
+		left: 0
+		top: 50%
+		margin-top: -160px
+	&.is-active
+		z-index: 4000
+		+opacity(1)
+		+transition(all .4s linear)
+	&.popup_succes
+		width: 100%
+		height: 250px
+		padding-top: 71px
+		background: url("../img/popup2.png")
+		+cover
+		position: absolute
+		left: 0
+		top: 50%
+		margin-top: -160px
+	.popup__in
+		position: relative
+	.popup__title
+		font-size: 40px
+		text-transform: uppercase
+		color: #FFF
+		text-align: center
+		+cond-regular
+		&.popup__title_small
+			margin-bottom: 30px
+			font-size: 30px
+		strong
+			color: #fff200 
+	.popup__row
+		margin-bottom: 20px
+		&.popup__row_center
+			text-align: center
+	.popup__social
+		position: relative
+		z-index: 666
+		.popup__social-meta
+			margin-bottom: 10px
+			font-size: 24px
+			color: #FFF 
+			text-align: center
+			text-transform: uppercase
+			+cond-regular
+		.popup__social-list
+			text-align: center
+			ul
+				display: inline-block
+				+clr
+			li
+				float: left
+				margin-left: 10px
+				&:first-child
+					margin-left: 0
+				&.vk
+					a
+						+s(vk)
+				&.fb
+					a
+						+s(fb)
+				&.tw
+					a
+						+s(tw)
+				&.od
+					a
+						+s(od)
+				&.you
+					a
+						+s(yt)
+			a
+				display: block
+
+
+
+
+.cross
+	+s(cross)
+	position: absolute
+	top: -25px
+	right: 15px
+	cursor: pointer
+	&:hover
+		+sp(cross_h)
