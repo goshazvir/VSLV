@@ -50,4 +50,14 @@ head.ready(function() {
 		$(".overlay").addClass("is-active");
 		$(".popup_succes").addClass("is-active");
 	});
+
+	$('.js-gallery').on('click', function() {
+		$(".overlay").addClass("is-active");
+		$(".popup_gallery").addClass("is-active");
+	});
+
+	$('.js-text').on('click', function() {
+		$(".overlay").addClass("is-active");
+		$(".popup_text").addClass("is-active");
+	});
 });

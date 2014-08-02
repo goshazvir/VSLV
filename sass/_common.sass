@@ -804,12 +804,6 @@ body
 		&.trust__row_long
 			img
 				margin-right: 31px
-		// &.is-hide
-		// 	display: none
-		// 	+transition(all linear 0.3s)
-		// &.is-open
-		// 	display: block
-		// 	+transition(all linear 0.3s)
 	.trust__2
 		display: none
 	.trust__more
@@ -1151,6 +1145,28 @@ body
 		left: 0
 		top: 50%
 		margin-top: -160px
+	&.popup_gallery
+		width: 100%
+		height: 748px
+		padding-top: 71px
+		background: url("../img/popup3.png")
+		+cover
+		position: absolute
+		left: 0
+		top: 30px
+		color: #fff 
+	&.popup_text
+		width: 100%
+		height: 748px
+		padding-top: 71px
+		background: url("../img/popup3.png")
+		+cover
+		position: absolute
+		left: 0
+		top: 30px
+		color: #fff
+		.cross
+			top: -20px
 	.popup__in
 		position: relative
 	.popup__title
@@ -1164,6 +1180,12 @@ body
 			font-size: 30px
 		strong
 			color: #fff200 
+		&.popup__title_mod
+			font-size: 32px
+			color: #FFF
+			strong
+				font-size: 42px
+				color: #ffff00 
 	.popup__row
 		margin-bottom: 20px
 		&.popup__row_center
@@ -1205,9 +1227,43 @@ body
 						+s(yt)
 			a
 				display: block
-
-
-
+	.popup__slider
+		margin-top: 30px
+		position: relative
+	.popup__item
+		text-align: center
+	.popup__media
+		display: inline-block
+		width: 770px
+		height: 460px
+		overflow: hidden
+		border: 4px solid #ddd
+	.popup__slider-left
+		top: 225px
+		left: 45px
+		position: absolute
+		cursor: pointer
+		+s(i-left)
+		&:hover
+			// +s(i-left_h)
+			// top: 216px
+			// left: 29px
+			+opacity(0.8)
+	.popup__slider-right
+		top: 225px
+		right: 45px
+		position: absolute
+		cursor: pointer
+		+s(i-right)
+		&:hover
+			+opacity(0.8)
+		// 	+s(i-right_h)
+	.popup__text
+		width: 800px
+		height: 430px
+		padding-top: 50px
+		overflow: hidden
+		position: relative
 
 .cross
 	+s(cross)
@@ -1217,3 +1273,14 @@ body
 	cursor: pointer
 	&:hover
 		+sp(cross_h)
+	&.cross_mod
+		+s(cross2)
+		top: -50px
+		right: 50px
+		&:hover
+			+sp(cross2_h)
+
+.popup-slideshow
+	width: 778px
+	margin-left: auto
+	margin-right: auto
