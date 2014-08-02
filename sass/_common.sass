@@ -45,8 +45,8 @@
 	+cond-regular
 	&:focus
 		@include box-shadow(0 0 10px rgba(54,133,29,.75))
-	&:first-child
-		margin-right: 20px
+	// &:first-child
+	// 	margin-right: 20px
 
 .textarea
 	display: inline-block
@@ -258,8 +258,8 @@ body
 		+cond-regular
 		&:focus
 			@include box-shadow(0 0 10px rgba(54,133,29,.75))
-		&:first-child
-			margin-right: 20px
+		// &:first-child
+		// 	margin-right: 20px
 	.order__send
 		display: inline-block
 		padding: 11px 59px
@@ -745,8 +745,8 @@ body
 		+cond-regular
 		&:focus
 			@include box-shadow(0 0 10px rgba(54,133,29,.75))
-		&:first-child
-			margin-right: 20px
+		// &:first-child
+		// 	margin-right: 20px
 	.order__send
 		display: inline-block
 		padding: 11px 59px
@@ -1284,3 +1284,41 @@ body
 	width: 778px
 	margin-left: auto
 	margin-right: auto
+
+.input-wrap
+	display: inline-block
+	position: relative
+	&:first-child
+		margin-right: 20px
+	&.is-ok
+		&:after
+			content: ""
+			position: absolute
+			top: 18px
+			right: 13px
+			+s(i-ok)
+	&.is-error
+		&:after
+			content: ""
+			position: absolute
+			top: 18px
+			right: 13px
+			+s(i-error)
+		input
+			border-color: #ff0000
+		.error-tooltip
+			+s(error-tooltip)
+			position: absolute
+			top: -48px
+			right: 4px
+// input
+// 	&.is-ok
+// 		position: relative
+// 		&:after
+// 			content: ""
+// 			width: 10px
+// 			height: 10px
+// 			background: red 
+// 			position: absolute
+// 			top: 5px
+// 			right: 5px
