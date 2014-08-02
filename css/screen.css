@@ -75,7 +75,7 @@ body { font-size: 14px; font-family: Arial, sans-serif; line-height: 1.4; }
 
 .proj { position: relative; }
 .proj:after { content: ""; width: 100%; height: 1074px; background: url("../img/bg1.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; position: absolute; top: -115px; left: 0; }
-.proj:before { content: ""; width: 376px; height: 690px; background: url("../img/tipok.png"); position: absolute; top: 0; right: 0; }
+.proj:before { content: ""; width: 376px; height: 690px; background: url("../img/tipok.png"); position: absolute; top: 50px; right: 120px; z-index: 100; }
 .proj .proj__in { position: relative; z-index: 1000; }
 .proj .proj__top { margin-bottom: 30px; font-size: 30px; color: white; position: relative; text-align: center; text-transform: uppercase; font-family: "PFDinTextCondPro-Regular", arial, sans-serif; }
 .proj .proj__top:before { content: ""; width: 260px; height: 2px; background: #64bc46; position: absolute; bottom: -5px; left: 50%; margin-left: -130px; }
