@@ -38,30 +38,40 @@ head.ready(function() {
 	$('.js-send').on('click', function() {
 	 $(".overlay").addClass("is-active");
 	 $(".popup_send").addClass("is-active");
+	 $(".popup-wrap_send").addClass("is-active");
+	 $("body").addClass("is-popup");
 	 return false;
-	});
-
-	$('.js-cross').on('click', function() {
-		$(".popup").removeClass("is-active");
-		$(".overlay").removeClass("is-active");
-		return false;
 	});
 
 	$('.js-succes').on('click', function() {
 		$(".overlay").addClass("is-active");
 		$(".popup_succes").addClass("is-active");
+		$(".popup-wrap_succes").addClass("is-active");
+		$("body").addClass("is-popup");
 		return false;
 	});
 
 	$('.js-gallery').on('click', function() {
 		$(".overlay").addClass("is-active");
 		$(".popup_gallery").addClass("is-active");
+		$(".popup-wrap_gallery").addClass("is-active");
+		$("body").addClass("is-popup");
 		return false;
 	});
 
 	$('.js-text').on('click', function() {
 		$(".overlay").addClass("is-active");
 		$(".popup_text").addClass("is-active");
+		$(".popup-wrap_text").addClass("is-active");
+		$("body").addClass("is-popup");
+		return false;
+	});
+
+	$('.js-cross').on('click', function() {
+		$(".popup").removeClass("is-active");
+		$(".overlay").removeClass("is-active");
+		$(".popup-wrap").removeClass("is-active");
+		$("body").removeClass("is-popup");
 		return false;
 	});
 });
